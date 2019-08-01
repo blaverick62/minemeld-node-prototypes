@@ -844,6 +844,18 @@ prototypes:
             logstash_host: 127.0.0.1
             logstash_port: 5514
 
+    suricata:
+        author: 850 CPT
+        development_status: EXPERIMENTAL
+        node_type: output
+        indicator_types: [ any ]
+        tags: []
+        description: >
+            Generate Suricata rules collected in a daily file on the minemeld host
+        class: minemeld.ft.suricata.SuricataOutput
+        config:
+          suricata_filepath: /DIP/suricata/
+
     dagPusher:
         author: MineMeld Core Team
         development_status: STABLE
