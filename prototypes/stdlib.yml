@@ -850,6 +850,7 @@ prototypes:
         node_type: output
         indicator_types:
           - IPv4
+          - domain
         tags: []
         description: >
             Generate Suricata rules collected in a daily file on the minemeld host
