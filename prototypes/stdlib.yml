@@ -848,7 +848,8 @@ prototypes:
         author: 850 CPT
         development_status: EXPERIMENTAL
         node_type: output
-        indicator_types: [ any ]
+        indicator_types:
+          - IPv4
         tags: []
         description: >
             Generate Suricata rules collected in a daily file on the minemeld host
