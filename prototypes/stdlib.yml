@@ -844,7 +844,7 @@ prototypes:
             logstash_host: 127.0.0.1
             logstash_port: 5514
 
-    suricata:
+    broIntel:
         author: 850 CPT
         development_status: EXPERIMENTAL
         node_type: output
@@ -854,10 +854,10 @@ prototypes:
           - md5
         tags: []
         description: >
-            Generate Suricata rules collected in a daily file on the minemeld host
-        class: minemeld.ft.suricata.SuricataOutput
+            Generate Bro Intel rules collected in a daily file on the minemeld host
+        class: minemeld.ft.brointel.BroIntelOutput
         config:
-          suricata_filepath: /DIP/suricata/
+          suricata_filepath: /DIP/brointel/
 
     dagPusher:
         author: MineMeld Core Team
