@@ -851,6 +851,7 @@ prototypes:
         indicator_types:
           - IPv4
           - domain
+          - md5
         tags: []
         description: >
             Generate Suricata rules collected in a daily file on the minemeld host
