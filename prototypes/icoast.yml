@@ -22,7 +22,7 @@ prototypes:
             ICOAST publishes .csv files regularly containing IOCs.
             This miner mines indicators from these .csvs when they
             are placed within the specified path on the local machine.
-        class: minemeld.ft.recordedfuture.IPRiskList
+        class: minemeld.ft.icoast.LocalICOAST
         config:
             confidence: 95
             age_out:
