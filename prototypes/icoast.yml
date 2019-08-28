@@ -1,0 +1,33 @@
+url: local:/DIP/icoast/
+description: >
+     ICOAST is a service that publishes aggregated IOCs
+     collected from intelligence reporting.
+
+prototypes:
+    LocalICOAST:
+        author: 850 CPT
+        development_status: EXPERIMENTAL
+        node_type: miner
+        indicator_types:
+            - IPv4
+            - domain
+            - URL
+            - md5
+            - sha1
+            - sha256
+        tags:
+            - ConfidenceHigh
+            - ShareLevelRed
+        description: >
+            ICOAST publishes .csv files regularly containing IOCs.
+            This miner mines indicators from these .csvs when they
+            are placed within the specified path on the local machine.
+        class: minemeld.ft.recordedfuture.IPRiskList
+        config:
+            confidence: 95
+            age_out:
+                default: null
+                sudden_death: true
+                interval: 3307
+            attributes:
+                share_level: red
