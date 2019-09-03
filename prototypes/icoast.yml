@@ -1,4 +1,4 @@
-url: local:/DIP/icoast/
+url: "local:/DIP/icoast/"
 description: >
      ICOAST is a service that publishes aggregated IOCs
      collected from intelligence reporting.
@@ -24,6 +24,7 @@ prototypes:
             are placed within the specified path on the local machine.
         class: minemeld.ft.icoast.LocalICOAST
         config:
+            url: "local:/DIP/icoast"
             confidence: 95
             age_out:
                 default: null
