@@ -32,3 +32,10 @@ prototypes:
                 interval: 3307
             attributes:
                 share_level: red
+            fieldnames:
+              - event_id
+              - category
+              - type
+              - value
+              - event_date
+              - attribute_tag
